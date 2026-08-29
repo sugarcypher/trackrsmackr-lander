@@ -745,7 +745,7 @@
 
 <nav>
   <div class="nav-logo">TRACKR<span>SMACKR</span></div>
-  <a href="#waitlist" class="nav-cta">Get Early Access</a>
+  <a href="https://chromewebstore.google.com/detail/trackrsmackr-the-cookie-b/dfdpaikiobacoackaccafoifccabidbh" class="nav-cta" target="_blank" rel="noopener">Add to Chrome</a>
 </nav>
 
 <!-- HERO -->
@@ -755,7 +755,7 @@
 
   <img src="promo_440x280_v2.png" alt="TrackRSmackR — The Cookie Bouncer" style="width: min(440px, 90vw); margin-bottom: 24px; filter: drop-shadow(0 0 40px rgba(245,200,0,0.25)); animation: float 4s ease-in-out infinite;">
 
-  <div class="badge">Coming to Chrome Web Store — Under Review</div>
+  <div class="badge">Now available on the Chrome Web Store</div>
 
   <h1>
     <span class="line1">TRACKR</span>
@@ -765,7 +765,7 @@
   <p class="hero-sub">Stop cookies. Block trackers. <em>Reclaim your data.</em></p>
 
   <div class="cta-group">
-    <a href="#waitlist" class="btn-primary">🥊 Join the Waitlist</a>
+    <a href="https://chromewebstore.google.com/detail/trackrsmackr-the-cookie-b/dfdpaikiobacoackaccafoifccabidbh" class="btn-primary" target="_blank" rel="noopener">🥊 Add to Chrome — Free</a>
     <a href="#how" class="btn-secondary">See How It Works →</a>
   </div>
 
@@ -789,53 +789,25 @@
   </div>
 </div>
 
-<!-- HOW IT WORKS -->
-<section id="how">
-  <div class="how">
-    <div>
-      <span class="section-label">How It Works</span>
-      <h2 class="section-title">THE BOUNCER IS ALWAYS ON THE DOOR</h2>
-      <p class="section-body">TrackRSmackR runs a silent, local policy engine that intercepts every cookie before it settles — and decides its fate in milliseconds.</p>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">01</div>
-        <div class="step-content">
-          <h3>Cookie Arrives</h3>
-          <p>The moment a cookie tries to land, the Cookie Observer intercepts it before it touches storage.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <div class="step-content">
-          <h3>Classified by Policy</h3>
-          <p>The local policy engine reads it, tags it — essential, unknown, or flagged — in real time.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <div class="step-content">
-          <h3>Locked in the Jar</h3>
-          <p>Non-essential cookies get sealed in the encrypted Cookie Jar. They sit. They wait. They decay.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <div class="step-content">
-          <h3>Smacked on a Timer</h3>
-          <p>Timed decay cycles fire automatically. The tracker dies. No trace. No comeback.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">05</div>
-        <div class="step-content">
-          <h3>You Stay Free</h3>
-          <p>The Intelligence Snapshot shows you exactly what happened. Full transparency. Full control.</p>
-        </div>
-      </div>
+<!-- DEMO VIDEO -->
+<section id="video" style="padding: 60px 20px; max-width: 960px; margin: 0 auto; text-align: center;">
+  <span class="section-label">See It In Action</span>
+  <h2 class="section-title" style="margin-bottom: 32px;">WATCH THE BOUNCER WORK</h2>
+  <div style="position: relative; border: 1px solid var(--line); background: var(--card); overflow: hidden; max-width: 400px; margin: 0 auto;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--yellow), var(--red)); z-index: 1;"></div>
+    <div style="position: relative; padding-bottom: 177.78%; height: 0; overflow: hidden;">
+      <iframe
+        src="https://www.youtube.com/embed/fCPkwvEPhYk?autoplay=0&rel=0&modestbranding=1"
+        title="TrackRSmackR — The Cookie Bouncer demo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+      ></iframe>
     </div>
   </div>
 </section>
+
 
 <!-- FEATURES -->
 <section id="features" style="padding-top: 0;">
@@ -938,18 +910,6 @@
   </ul>
 </div>
 
-<!-- WAITLIST -->
-<div class="waitlist" id="waitlist">
-  <div class="waitlist-inner">
-    <h2>GET IN <span>EARLY</span></h2>
-    <p>TrackRSmackR is under review for the Chrome Web Store. Join the waitlist and be first to know when the Bouncer goes live.</p>
-    <div class="form-row">
-      <input type="email" placeholder="your@email.com" id="email-input">
-      <button onclick="joinWaitlist()">JOIN</button>
-    </div>
-    <p class="form-note">No spam. One email when it launches. That's it.</p>
-  </div>
-</div>
 
 <!-- FOOTER -->
 <footer>
@@ -1000,5 +960,36 @@ steps.forEach(s => {
   <span style="margin:0 6px;opacity:.3">·</span>
   <a href="https://acepaste.xyz" style="color:rgba(255,255,255,.6);text-decoration:none">Acepaste</a>
 </footer>
+
+<!-- AUDIO PLAYER -->
+<div id="audio-bar" style="
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: #0e1117;
+  border-top: 1px solid #1e2330;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 1000;
+  font-family: 'Barlow Condensed', sans-serif;
+">
+  <span style="color: #f5c800; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; white-space: nowrap; text-transform: uppercase;">
+    ▶ TrackRSmackR
+  </span>
+  <audio id="site-audio" controls loop style="flex: 1; height: 32px; accent-color: #f5c800; min-width: 0;">
+    <source src="TrackrSmackrYeah.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="document.getElementById('audio-bar').style.display='none'" style="
+    background: none; border: none; color: #6b7280; cursor: pointer;
+    font-size: 18px; line-height: 1; padding: 0 4px;
+  " title="Close">×</button>
+</div>
+<style>
+  /* push page content above the sticky player */
+  body { padding-bottom: 56px; }
+  audio::-webkit-media-controls-panel { background: #13171f; }
+</style>
+
 </body>
 </html>
